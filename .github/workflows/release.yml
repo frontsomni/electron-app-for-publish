@@ -5,12 +5,11 @@ on:
     tags:
       - v*.*.*
 
+permissions: read-all
+
 jobs:
   release:
     runs-on: ${{ matrix.os }}
-
-    permissions:
-      contents: write
 
     strategy:
       matrix:
